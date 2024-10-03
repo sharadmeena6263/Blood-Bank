@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("Image/home image1.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            position: relative;
+        }
+        header {
+            background-color: rgba(220, 53, 69, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(51, 51, 51, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-image: url("Image/home image2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           
+        }
+        .container2 {
+            background-image: url("Image/table background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container2 h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 24px;
+            margin:5px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: #dc3545;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+        .cta-btn:hover {
+            background-color: #c82333;
+        }
+        .info-section {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .info-box {
+            width: 100%;
+            max-width: 300px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .info-box2 {
+            width: 100%;
+            max-width: 300px;
+            background-color:#D6E3FE;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .info-box h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .info-box p {
+            font-size: 14px;
+        }
+        .health-container {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: auto;
+            text-align: center;
+        }
+        .health-container h2 {
+            margin-bottom: 20px;
+        }
+        .health-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: static;
+            bottom: 0;
+            left: 0;
+        }
+        /* Add styles for the table */
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        tr {
+            background-color: #f2f2f2;
+        }
+       
+        
+        /* Media Queries for responsiveness */
+        @media only screen and (min-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero p {
+                font-size: 18px;
+            }
+            .cta-btn {
+                font-size: 18px;
+            }
+            .info-box {
+                width: calc(33.33% - 40px); /* Three columns with margin */
+                margin: 0 20px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Blood Donation Website</h1>
+        <p>Save a life, donate blood today!</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="login.html">Donor Login</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Every drop counts!</h1>
+            <h1>Be a life saver</h1>
+            <h1>For someone</h1>
+            <p>Donate blood and save lives. Join our community of donors today.</p>
+            <a href="registration.html" class="cta-btn">Donate Now</a>
+            <a href="ShowUser.jsp" class="cta-btn">Find Donor</a>
+        </section>
+    </div> 
+    <div class="health-container">
+        <h2>Health Advisory for Blood Donation</h2>
+        <div class="health-content">
+            <div class="info-box">
+                <h2>Before Donation</h2>
+                <ul>
+                    <li>Get a good night's sleep.</li>
+                    <li>Eat a healthy meal and stay hydrated.</li>
+                    <li>Avoid fatty foods, caffeine, and alcohol.</li>
+                    <li>Bring a form of identification.</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>During Donation</h2>
+                <ul>
+                    <li>Relax and stay calm.</li>
+                    <li>Inform the staff if you feel unwell.</li>
+                    <li>Avoid looking at the needle if you're squeamish.</li>
+                    <li>Squeeze and release the stress ball to keep blood flowing.</li>
+                    <li>Keep the donation site clean and dry.</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>After Donation</h2>
+                <ul>
+                    <li>Rest for at least 15 minutes before leaving.</li>
+                    <li>Drink plenty of fluids and avoid heavy lifting.</li>
+                    <li>Eat a healthy snack to replenish lost nutrients.</li>
+                    <li>Avoid smoking for at least an hour.</li>
+                    <li>Contact the blood bank if you experience dizziness or nausea.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+       <h3>BLOOD TYPE COMPATIBILITY TABLE</h3>
+        <table>
+            <tr>
+                <th>Blood Type</th>
+                <th>Can donate to</th>
+                <th>Can receive a donation from</th>
+            </tr>
+            <tr>
+                <td>Type A+</td>
+                <td>AB+ and A+</td>
+                <td>A+, A-, O+ and O-</td>
+            </tr>
+            <tr>
+                <td>Type A-</td>
+                <td>A+, A-, AB+ and AB-</td>
+                <td>A- and O-</td>
+            </tr>
+            <tr>
+                <td>Type B+</td>
+                <td>B+ and AB+</td>
+                <td>B+, B-, O+ and O-</td>
+            </tr>
+            <tr>
+                <td>Type B-</td>
+                <td>B+, B-, AB+ and AB-</td>
+                <td>B- and O-</td>
+            </tr>
+            <tr>
+                <td>Type AB+</td>
+                <td>AB+</td>
+                <td>A+, B+, O+, AB+, A-, B-, O- and AB- (all types)</td>
+            </tr>
+            <tr>
+                <td>Type AB-</td>
+                <td>AB+ and AB-</td>
+                <td>A-, B-, O- and AB-</td>
+            </tr>
+            <tr>
+                <td>Type O+</td>
+                <td>A+, B+, O+ and AB+</td>
+                <td>O+ and O-</td>
+            </tr>
+            <tr>
+                <td>Type O-</td>
+                <td>A+, B+, O+, AB+, A-, B-, O- and AB- (all types)</td>
+                <td>O-</td>
+            </tr>
+        </table>
+    </div>
+     <div class="info-section">
+        <div class="info-box2">
+            <h2>Why Donate?</h2>
+            <p>Every two seconds, someone needs blood. Your donation can save up to three lives.</p>
+            <h2>Who can donate</h2>
+            <p>You need to be 18-65 years old, weight 45kg or more and be fit and healthy.</p>
+        </div>
+        <div class="info-box2">
+            <h2>Benefits of Donation</h2>
+            <ul>
+                <li>Helps reduce the risk of heart disease</li>
+                <li>Stimulates the production of new blood cells</li>
+                <li>Burns calories</li>
+                <li>Free health check-up</li>
+                <li>Feels great to give back!</li>
+            </ul>
+        </div>
+        <div class="info-box2">
+            <h2>How often can I donate?</h2>
+            <p>Male donors can donate again after 90 days and female donors can donate again after 120 days.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Blood Donation Website. All rights reserved.</p>
+    </footer>
+ 
+</body>
+</html>
